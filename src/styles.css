@@ -1,6 +1,20 @@
 /* You can add global styles to this file, and also import other style files */
 
+html {
+    min-height: 100%;
+    position: relative;
+}
+
+body {
+    margin: 0;
+    margin-bottom: 40px;
+}
+
 .container {
+    margin-top: 20px;
+}
+
+.main-container {
     margin-top: 20px;
 }
 
@@ -36,4 +50,175 @@ hr {
     background-color: #5cb85c;
     height: 5px;
     border: none;
+}
+
+.productbox {
+    display: flex;
+    text-align: center;
+    background-color: #5cb85c;
+    color: white;
+    width: 200px;
+    margin: 3px;
+    height: inherit;
+    -o-transition: color .1s ease, background 1s ease;
+    -ms-transition: color .1s ease, background 1s ease;
+    -moz-transition: color .1s ease, background 1s ease;
+    -webkit-transition: color .1s ease, background 1s ease;
+    /* ...and now for the proper property */
+    transition: 1s;
+    box-sizing: border-box;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.8);
+}
+
+.info {
+    margin-left: 35px;
+    font-weight: 500;
+    text-align: right;
+}
+
+.productbox:hover {
+    background-color: rgb(50, 68, 52);
+}
+
+a:link,
+a:visited,
+a:active {
+    text-decoration: none;
+}
+
+@media screen and (max-width: 600px) {
+    .productbox {
+        width: auto;
+    }
+}
+
+.container .card {
+    position: relative;
+    cursor: pointer;
+    border: none;
+    padding: 0px 20px;
+}
+
+.container .card .face {
+    width: 300px;
+    height: 200px;
+    transition: 0.5s;
+}
+
+.container .card .face.face1 {
+    position: relative;
+    background: rgb(50, 68, 52);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    transform: translateY(100px);
+}
+
+.container .card:hover .face.face1 {
+    background: #5cb85c;
+    transform: translateY(0);
+}
+
+.container .card .face.face1 .content {
+    opacity: 0.2;
+    transition: 0.5s;
+}
+
+.container .card:hover .face.face1 .content {
+    opacity: 1;
+}
+
+.container .card .face.face1 .content img {
+    max-width: 100px;
+}
+
+.container .card .face.face1 .content h3 {
+    margin: 10px 0 0;
+    padding: 0;
+    color: #fff;
+    text-align: center;
+    font-size: 1.5em;
+}
+
+.container .card .face.face2 {
+    position: relative;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    box-sizing: border-box;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.8);
+    transform: translateY(-100px);
+}
+
+.container .card:hover .face.face2 {
+    transform: translateY(0);
+}
+
+.container .card .face.face2 .content p {
+    margin: 0;
+    padding: 0;
+}
+
+.container .card .face.face2 .content a {
+    margin: 15px 0 0;
+    display: inline-block;
+    text-decoration: none;
+    font-weight: 900;
+    color: #333;
+    padding: 5px;
+    border: 1px solid #333;
+}
+
+.container .card .face.face2 .content a:hover {
+    background: #333;
+    color: #fff;
+}
+
+.blancoynegro {
+    filter: url('#grayscale');
+    -webkit-filter: grayscale(100%);
+    -moz-filter: grayscale(100%);
+    -ms-filter: grayscale(100%);
+    -o-filter: grayscale(100%);
+    filter: grayscale(100%);
+    filter: Gray();
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+.blancoynegro:hover {
+    -webkit-filter: grayscale(0%);
+    -moz-filter: grayscale(0%);
+    -ms-filter: grayscale(0%);
+    -o-filter: grayscale(0%);
+    filter: none;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 20px;
+}
+
+.footerstyle {
+    background-color: #5cb85c;
+    margin-top: 50px;
+    padding: 20px;
+}
+
+.footerstyle2 {
+    color: white;
+    background-color: rgb(50, 68, 52);
 }

@@ -18,6 +18,7 @@ import { ContactoComponent } from './components/contacto/contacto.component';
 import { ProductoComponent } from './components/producto/producto.component';
 import { BuscadorComponent } from './components/buscador/buscador.component';
 import { ProductoTarjetaComponent } from './components/producto-tarjeta/producto-tarjeta.component';
+import { FooterComponent } from './components/shared/footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +31,8 @@ import { ProductoTarjetaComponent } from './components/producto-tarjeta/producto
     ContactoComponent,
     ProductoComponent,
     BuscadorComponent,
-    ProductoTarjetaComponent
+    ProductoTarjetaComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
