@@ -344,4 +344,10 @@ nav .tab-highlighter {
         z-index: 1;
         position: relative;
     }
+    nav a {
+        font-size: 12px;
+    }
+    nav div.search .search-textbox {
+        font-size: 12px;
+    }
 }

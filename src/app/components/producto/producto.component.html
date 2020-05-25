@@ -1,5 +1,5 @@
 <div class="animated fadeIn fast">
-    <h1>Productos</h1>
+    <h5>PRODUCTOS</h5>
     <hr>
 </div>
 
@@ -9,7 +9,7 @@
         <br><br>
         <h3 class="text-center">{{ producto.precio |currency:'PEN' }}</h3>
         <br>
-        <a [routerLink]="['/productos']" class="btn btn-outline-success btn-block">Regresar</a>
+        <a id="button" [routerLink]="['/productos']" class="btn btn-dark btn-block">Regresar</a>
     </div>
     <!-- <div class="col-md-8">
         <h3>{{ producto.categoria }}</h3>
@@ -17,7 +17,7 @@
         <p>{{ producto.descripcion }}</p>
     </div> -->
     <div class="container mb-3 col-md-8">
-        <div class="card text-white bg-success ">
+        <div class="card text-white" id="productdescription">
             <div class="card-header">
                 <h3>{{ producto.producto }} </h3>
             </div>
@@ -27,5 +27,4 @@
             </div>
         </div>
     </div>
-
 </div>

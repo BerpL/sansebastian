@@ -1,15 +1,15 @@
 <div class="card border-light animated fadeIn">
     <img [src]=" producto.img " class="card-img-top rounded img-fluid " [alt]="producto.producto">
     <div class="card-body ">
-        <h5 class="card-title ">{{ producto.producto }}
-        </h5>
-        <p class="card-text ">clase: {{ producto.clase }}<br>marca: {{ producto.marca }} <br>tipo: {{ producto.tipo }} <br>medida: {{ producto.medida }}
-        </p>
+        <h6 class="card-title ">{{ producto.producto | uppercase }}
+        </h6>
+        <!-- <p class="card-text ">clase: {{ producto.clase }}<br>marca: {{ producto.marca }} <br>tipo: {{ producto.tipo }} <br>medida: {{ producto.medida }}
+        </p> -->
 
         <div class="text-center">
-            <h5>{{ producto.precio |currency:'PEN' }}</h5>
+            <h6>{{ producto.precio |currency:'PEN' }}</h6>
         </div>
-        <button (click)="verProducto()" type="button " class="btn btn-outline-success btn-block ">
+        <button id="button" (click)="verProducto()" type="button " class="btn btn-dark btn-block">
             Ver más...
             </button>
     </div>
